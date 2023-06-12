@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "build": "rm -rf dst/ && cp -r src/ dst/ && sd '(.*)\\.ts\";?$' '$1\";' dst/* && deno run --allow-read --allow-write=. --allow-env npm:typescript-to-lua@1.16.2 dst/* && rm dst/*.ts"
+    "build": "rm -rf dst/ && cp -r src/ dst/ && sd '(.*)\\.ts\";?$' '$1\";' dst/* && deno run --allow-read --allow-write=. --allow-env npm:typescript-to-lua@1.16.2 dst/* && rm dst/*.ts",
     "install": "mkdir -p /home/mrcool/.config/nvim/lua && cp dst/* /home/mrcool/.config/nvim/lua && mv /home/mrcool/.config/nvim/lua/init.lua /home/mrcool/.config/nvim/init.lua"
   }
 }
